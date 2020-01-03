@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$1 [QSA,NC,L]
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$2 [QSA,NC,L]
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$3 [QSA,NC,L]
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$4 [QSA,NC,L]
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$5 [QSA,NC,L]
+RewriteRule ^([0-9A-ZA-Z-]+)$ advogados-descricao.php?advogado=$6 [QSA,NC,L]

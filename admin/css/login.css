@@ -1,0 +1,14 @@
+#login .card {
+    border-radius: 10%;
+    font-weight: bolder;
+}
+
+#login form input{
+    border-radius: 1%;
+    border-color: #0c5460;
+}
+
+#login form input:hover{
+    border-radius: 1%;
+    border-color: #0c5460;
+}

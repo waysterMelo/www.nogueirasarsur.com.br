@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+body,html{
+    overflow-x: hidden;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 99;
+}
+
+#status{
+    width: 256px;
+    height: 44px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../img/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -100px 0 0 -100px;
+    border: none;
+}
+
+#header {
+    height: auto;
+    background-color: white;
+    color: white;
+    font-size: 12px;
+}
+
+#logo img{
+    width: 65%;
+}
+
+nav{
+    background-image: radial-gradient( circle 897px at 91.9% 47.6%,  rgba(31,64,55,1) 0%, rgba(0,150,136,1) 56.8%, rgba(0,105,92,1) 90% );
+}
+
+#nav ul li a {
+    color: white;
+    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nav ul li a:hover {
+    color: white;
+    font-size: 15px;
+    border-bottom: 3px solid white;
+}
+#advogados_novo {
+    font-family: 'Playfair Display', serif;
+    background-color: whitesmoke;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)}
+.btn-grad:hover { background-position: right center; }
+
+#advogados_novo span{
+    margin-bottom: 45%;
+}
+
+#advogados_novo .card{
+    width: 20rem;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#advogados_novo .card-heading{
+    min-height: 80px;
+    max-height: 80px;
+}
+#advogados_novo  .card-body{
+    min-height: 150px;
+    max-height: 150px;
+}
