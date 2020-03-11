@@ -21,7 +21,7 @@ while($rs = mysqli_fetch_array($query)){
     <link rel="stylesheet" href="../libraries/css/font-awesome.min.css">
     <link rel="stylesheet" href="../libraries/css/animate.css">
     <link rel="stylesheet" href="../libraries/css/aos.css">
-    <link rel="stylesheet" href="../libraries/css/estilo4.css">
+    <link rel="stylesheet" href="../libraries/css/estilo_1.css">
 </head>
 
 <body style="background-color: whitesmoke">
@@ -48,12 +48,12 @@ while ($rs = mysqli_fetch_array($query)){
             <div class="col-md-3 col-lg-4 col-sm-2" id="logo">
                 <img src="/libraries/img/logo.jpg" title="Nogueira e Sarsur Advogados Logo" alt="logo" class="img-fluid">
             </div>
-            <div class="col-md-3 col-lg-3 font-weight-bold text-center my-auto" style="color: #000;">
-                <i class="fa fa-phone fa-2x textobranco"></i>
+            <div class="col-md-3 col-lg-2 font-weight-light text-center my-auto" style="color: #000;">
+<!--                <i class="fa fa-phone fa-2x textobranco"></i>-->
                 <span class="textobranco"><?php echo $telefone ?></span>
             </div>
-            <div class="col-md-6 col-lg-5 font-weight-bold text-center mx-auto my-auto border-left" style="color: #000;">
-                <i class="fa fa-home fa-2x textobranco"></i>
+            <div class="col-md-6 col-lg-6 font-weight-light text-center mx-auto my-auto border-left" style="color: #000;">
+<!--                <i class="fa fa-home fa-2x textobranco"></i>-->
                 <span class="textobranco"><?php echo nl2br($endereco);?></span>
             </div>
         </div>
@@ -63,7 +63,7 @@ while ($rs = mysqli_fetch_array($query)){
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="nav">
-                    <ul class="navbar-nav mx-auto text-center">
+                    <ul class="navbar-nav mr-auto text-center text-light">
                         <li class="nav-item active mx-1">
                             <a title="Página Inicial" href="../index.php" class="nav-link">Página Inicial</a>
                         </li>
@@ -92,7 +92,7 @@ while ($rs = mysqli_fetch_array($query)){
         </div>
         <div class="row justify-content-center">
             <div class="text-capitalize text-center pb-5">
-                <h1 style="color: white;" class="font-weight-bold mt-5 py-4 display-4 "><?php echo $texto_header;?></h1>
+                <h1 style="color: #0c5460;" class="font-weight-bold mt-5 py-4 display-4 "><?php echo $texto_header;?></h1>
                 <a href="index.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <span class="text-white text-capitalize"> nosso escritório</span>
             </div>

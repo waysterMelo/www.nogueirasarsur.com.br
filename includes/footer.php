@@ -5,43 +5,43 @@
     <div class="container-fluid">
        <div class="row">
            <div class="col-lg-3 col-md-12 my-auto">
-               <p class="text-center text-white mt-3 font-weight-bold">
+               <p class="text-center text-white mt-3">
                    Serviços de alta qualidade, desenvolvidos sob medida para cada cliente, bem como equipe de advogados experientes e altamente comprometidos.
                </p>
            </div>
            <div class="col-lg-3 col-md-4 d-none d-sm-block">
-               <h6 class="font-weight-bold">Menu</h6>
+               <h6 class="font-weight-bold text-white">Menu</h6>
                <ul class="nav flex-column">
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="index.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
+                       <a class="nav-link text-white font-weight-light" href="index.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="./advogados/"><i class="fa fa-chevron-right mx-2"></i>Advogados</a>
+                       <a class="nav-link text-white font-weight-light" href="./advogados/"><i class="fa fa-chevron-right mx-2"></i>Advogados</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Escritorio</a>
+                       <a class="nav-link text-white font-weight-light" href="escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Escritorio</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="works.php"><i class="fa fa-chevron-right mx-2"></i>Trabalhe conosco</a>
+                       <a class="nav-link text-white font-weight-light" href="works.php"><i class="fa fa-chevron-right mx-2"></i>Trabalhe conosco</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="contato.php"><i class="fa fa-chevron-right mx-2"></i>Contato</a>
+                       <a class="nav-link text-white font-weight-light" href="contato.php"><i class="fa fa-chevron-right mx-2"></i>Contato</a>
                    </li>
                 
                </ul>
            </div>
            <div class="col-lg-3 col-md-6">
-               <h6 class="font-weight-bold">Contato</h6>
+               <h6 class="font-weight-bold text-white">Contato</h6>
                <ul class="nav flex-column">
                    <li class="nav-item">
                        <address class="nav-link text-white font-weight-bold">
                            Avenida do Contorno, nº 3257 <br> 6º Andar <br> Bairro Santa Efigênia <br> Belo Horizonte / MG <br> CEP 30.110-017</address>
                    </li>
                    <li class="nav-item">
-                       <span class="nav-link text-white font-weight-bold">contato@nogueirasarsur.com.br</span>
+                       <span class="nav-link text-white font-weight-normal">contato@nogueirasarsur.com.br</span>
                    </li>
                    <li class="nav-item">
-                       <span class="nav-link text-white font-weight-bold">(31) 3586-2146</span>
+                       <span class="nav-link text-white font-weight-normal">(31) 3586-2146</span>
                    </li>
                </ul>
            </div>

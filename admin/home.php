@@ -121,6 +121,12 @@ if (!isset($_SESSION['email']) && (!isset($_SESSION['senha']))){
                         <i class="fab fa-wpforms mx-2"></i></i>advogados</a>
                 </li>
 
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-uppercase" href="?works">
+                        <i class="fab fa-wpforms mx-2"></i></i>Trabalhe conosco</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-dark text-uppercase" href="logout.php"><i class="fas fa-sign-out-alt mx-2"></i>Sair</a>
                 </li>
@@ -172,6 +178,10 @@ if (!isset($_SESSION['email']) && (!isset($_SESSION['senha']))){
 
                 if (isset($_GET['advogados'])){
                     include "advogados.php";}
+
+                if (isset($_GET['works'])){
+                    include "works.php";
+                }
                 ?>
             </div>
         </main>

@@ -1,7 +1,7 @@
 <?php include ('./includes/menu.php')?>
 
 
-<div class="container-fluid py-4" id="diferencial" >
+<div class="container-fluid py-4" id="diferencial">
     <?php
         $sql = "select * from diferencial";
         $query = mysqli_query($conn, $sql);
@@ -26,7 +26,7 @@
                       <img src="/libraries/img/<?php echo $imagem ?>"
                            alt="<?php echo $titulo; ?>" class="img-fluid mx-auto my-auto pb-3">
                   </div>
-                  <div class="card-body text-center bg-white">
+                  <div class="card-body text-center">
 <!--                        <h6>--><?php //echo $titulo ?><!--</h6>-->
                       <p><?php echo $texto?></p>
                   </div>
@@ -86,20 +86,23 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-4 col-12">
-                <img src="libraries/img/<?php echo $img1?>" alt="escritorio" class="d-block w-100 img-thumbnail">
+            <div class="col-lg-4 col-sm-4 col-12 d-flex">
+                <img src="libraries/img/<?php echo $img1?>"
+                     alt="escritorio" class=" w-75 img-thumbnail mx-auto mb-3">
             </div>
-            <div class="col-lg-4 col-sm-4 col-6">
-                <img src="libraries/img/<?php echo $img2?>" alt="escritorio" class="d-block w-100 img-thumbnail">
+            <div class="col-lg-4 col-sm-4 col-6 d-flex">
+                <img src="libraries/img/<?php echo $img2?>"
+                     alt="escritorio" class="mb-3 w-75 img-thumbnail mx-auto">
             </div>
-            <div class="col-lg-4 col-sm-4 col-6">
-                <img src="libraries/img/<?php echo $img3?>" alt="escritorio" class="d-block w-100 img-thumbnail">
+            <div class="col-lg-4 col-sm-4 col-6 d-flex">
+                <img src="libraries/img/<?php echo $img3?>"
+                     alt="escritorio" class="mb-3 w-75 img-thumbnail mx-auto">
             </div>
         </div>
        </div>
 </section>
 
-<section id="areas">
+<section id="areas" class="mt-5">
     <div class="container-fluid">
         <div class="pt-4 text-center">
             <?php
@@ -157,46 +160,46 @@
     </div>
 </section>
 
-<section class="pb-2" style="background-color: transparent" id="advogados_novo" >
-    <div class="container-fluid">
-        <div class="py-5 text-center">
-            <h2 class="font-weight-bold text-uppercase">Advogados</h2>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-        </div>
-        <div data-aos="zoom-in" data-aos-duration="1500" class="row text-center justify-content-center mb-4">
-            <?php
-                $sql = "SELECT * from advogados";
-                $query = mysqli_query($conn, $sql);
-                while ($rs = mysqli_fetch_array($query)){
-                    $id = $rs['id'];
-                    $nomeSocia = $rs['nome'];
-                    $cargo = $rs['cargo'];
-                    $email = $rs['email'];
-                    $area = $rs['areas'];
-                    $url = $rs['url'];
-
-                    echo "                  
-                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 15rem\">
-                    <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
-                    <div class=\"card-heading d-flex\">
-                        <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
-                    </div>
-                    <div class=\"card-body\">
-                        <p>$cargo</p>
-                        <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
-                        <a style=\"color: #305f59;\" class=\"font-weight-light btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
-                    </div>
-                </div>         
-                    ";
-                }
-                ?>
-        </div>
-    </div>
-</section>
+<!--<section class="pb-2" style="background-color: transparent" id="advogados_novo" >-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="py-5 text-center">-->
+<!--            <h2 class="font-weight-bold text-uppercase">Advogados</h2>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--        </div>-->
+<!--        <div data-aos="zoom-in" data-aos-duration="1500" class="row text-center justify-content-center mb-4">-->
+<!--            --><?php
+//                $sql = "SELECT * from advogados";
+//                $query = mysqli_query($conn, $sql);
+//                while ($rs = mysqli_fetch_array($query)){
+//                    $id = $rs['id'];
+//                    $nomeSocia = $rs['nome'];
+//                    $cargo = $rs['cargo'];
+//                    $email = $rs['email'];
+//                    $area = $rs['areas'];
+//                    $url = $rs['url'];
+//
+//                    echo "
+//                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 15rem\">
+//                    <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
+//                    <div class=\"card-heading d-flex\">
+//                        <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
+//                    </div>
+//                    <div class=\"card-body\">
+//                        <p>$cargo</p>
+//                        <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
+//                        <a style=\"color: #305f59;\" class=\"font-weight-light btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
+//                    </div>
+//                </div>
+//                    ";
+//                }
+//                ?>
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <div class="container py-3">
     <div class="py-5 text-center">
@@ -217,12 +220,13 @@
                 $link = $xml->channel->item[$i]->link;
                 $data = new DateTime($pubDate);
                 $nowDate = $data->format('d-m-Y H:i');
-                $html .= " <p style='font-weight: bold'>$nowDate</p>
-                                    <p class=''>$title</p>
+                $html .= " <p class='text-danger' style='font-weight: bold'>$nowDate</p>
+                                    <p class='text-dark'>$title</p>
                                     <p class=''>$description</p>
 
                                  <div class=''>
-                                 <a href='$link' class='text-danger'> leia mais</a>
+                                 <a style='border: 2px solid #1b7943' href='$link' class='text-success p-1'> leia mais
+                                  <i class='fa fa-plus mx-2'></i></a>
                                     </div>
                              <hr>
                    ";}
@@ -242,11 +246,11 @@
                 $data = new DateTime($pubDate);
                 $nowDate = $data->format('d-m-Y H:i');
                 $link = $xml->channel->item[$i]->link;
-                $html .= " <p class='font-weight-bold'>$nowDate</p>
-                                    <p class=''>$title</p>
+                $html .= " <p class='font-weight-bold text-danger'>$nowDate</p>
+                                    <p class='text-dark'>$title</p>
                                     <p class=''>$description</p>
                                  <div class=''>
-                                 <a href='$link' class='text-danger'> leia mais</a>
+                                 <a  style='border: 2px solid #1b7943' href='$link'  class='text-success p-1'> leia mais  <i class='fa fa-plus mx-2'></i></a>
                                     </div>
                              <hr>
                    ";}

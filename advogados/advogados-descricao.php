@@ -47,7 +47,7 @@ gtag('config', 'UA-145823645-1', { 'optimize_id': 'GTM-D52NT8H'});
     <link rel="stylesheet" href="../libraries/css/font-awesome.min.css">
     <link rel="stylesheet" href="../libraries/css/animate.css">
     <link rel="stylesheet" href="../libraries/css/aos.css">
-    <link rel="stylesheet" href="../libraries/css/estilo4.css">
+    <link rel="stylesheet" href="1.css">
     <script src="../libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
 
@@ -66,12 +66,12 @@ gtag('config', 'UA-145823645-1', { 'optimize_id': 'GTM-D52NT8H'});
         <div class="col-md-12 col-lg-4 col-sm-2" id="logo">
             <img src="../libraries/img/<?php echo $logo; ?>" title="Nogueira e Sarsur Advogados Logo" alt="logo" class="img-fluid">
         </div>
-        <div class="col-md-4 col-md-12 col-lg-2 font-weight-bold text-center my-auto" style="color: #000;">
-           <i class="fa fa-phone fa-2x"></i>
+        <div class="col-md-4 col-md-12 col-lg-2 font-weight-light text-center my-auto" style="color: #000;">
+<!--           <i class="fa fa-phone fa-2x"></i>-->
             <span><?php echo $telefone ?></span>
         </div>
-        <div class="col-md-4 col-md-12 col-lg-6 font-weight-bold text-center mx-auto my-auto border-left" style="color: #000;">
-            <i class="fa fa-home fa-2x"></i>
+        <div class="col-md-4 col-md-12 col-lg-6 font-weight-light text-center mx-auto my-auto border-left" style="color: #000;">
+<!--            <i class="fa fa-home fa-2x"></i>-->
             <span><?php echo nl2br($endereco);?></span>
         </div>
     </div>
@@ -121,11 +121,11 @@ while ($rs = mysqli_fetch_array($query)){
 }
 ?>
 
-<section style="background-image: url('../libraries/img/<?php echo $img; ?>');height: 300px;background-size: cover;">
+<section style="background-image: url('../libraries/img/<?php echo $img; ?>');height: 400px;background-size: cover;">
     <div class="container-fluid" id="resume_adv">
         <div class="py-5 text-center">
             <div class="text-capitalize">
-                <h1 style="color: white; font-size: 4rem" class="font-weight-bold my-4 text-capitalize"><?php echo $texto; ?></h1>
+                <h1 style="color: #0c5460; font-size: 4rem" class="font-weight-bold my-4 text-capitalize"><?php echo $texto; ?></h1>
                 <a href="../index.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <a href="index.php" class="text-white">advogados</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <span class="text-white"><?php echo $nome; ?></span>
@@ -170,7 +170,7 @@ while ($rs = mysqli_fetch_array($query)){
     <div class="container-fluid">
        <div class="row">
            <div class="col-lg-3 col-md-12">
-               <img src="../libraries/img/logo.jpeg" title="logo marca" alt="logo"
+               <img src="../libraries/img/logo.jpg" title="logo marca" alt="logo"
                     class="img-fluid">
                <p class="text-left text-white mt-3 font-weight-bold">
                    Serviços de alta qualidade, desenvolvidos sob medida para cada cliente, bem como equipe de advogados experientes e altamente comprometidos.

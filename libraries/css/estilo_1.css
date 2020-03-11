@@ -24,7 +24,7 @@ body,html{
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url("../img/load.gif");
+    background-image: url("../img/loading.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -42,6 +42,34 @@ body,html{
 #header .terceira-row{
     margin-top: 7%;
     color: #0b2e13;
+    text-transform: none;
+}
+
+#address p{
+    border-bottom: 1px solid white;
+    font-size: 14px;
+}
+
+#header .celphone{
+    margin-left: -9%;
+}
+#header .celphone p{
+    border: 1px solid white;
+    color: #1b7943;
+    font-size: 17px;
+}
+
+#nav ul li a {
+    color: white;
+    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+}
+#nav ul li a:hover {
+    color: #0c5460;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+
 }
 
 #logo img{
@@ -52,21 +80,8 @@ nav{
     background-color: transparent;
 }
 
-#nav ul li a {
-    color: black;
-    font-size: 15px;
-    font-family: 'Muli', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: #0b2e13 2px solid;
-}
-
-#nav ul li a:hover {
-    color: white;
-    font-size: 15px;
-    border-bottom: 3px solid white;
-    font-weight: bold;
-    background-color: #0b2e13;
+#header .contact{
+    background-color: #1b7943;
 }
 
 #header h5{
@@ -75,6 +90,7 @@ nav{
 
 #diferencial {
     background-color: white;
+    border-bottom: 1px solid #1b7943;
 }
 
 #diferencial .card-body p{
@@ -209,33 +225,38 @@ nav{
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
+
     nav .border-left{
         border: 1px solid white;
     }
     #logo img{
         width: 100%;
     }
-    #header .textobranco{
-        color: white;
+
+    #header .celphone{
+        margin-left: 15%;
+        padding-bottom: 10px;
     }
+
     #nav ul li a {
-        background-color: #0b2e13;
+        background-color: #0c5460;
         color: white;
     }
     #header h1 {
-        margin-top: 18%;
-        font-size: 3em;
-        width: 99%;
-        line-height: 60px;
+        margin-top: -1%;
+        font-size: 1.5rem;
+        text-align: center;
     }
-    #header h5{
-        font-size: 2em;
-        width: 98%;
-        color: #1b7943;
-    }
-    #escritorio-header .textobranco {
+    #header h2{
+        font-size: 1em;
         color: white;
+        zoom: 2;
+        text-align: center;
     }
+    #header .box_contact{
+        margin-left: -15%;
+    }
+
     #escritorio-header {
         height: 500px;
     }
@@ -276,25 +297,31 @@ nav{
 }
 }
 @media (min-width: 375px) and (max-width: 414px) {
+
     #header-escritorio .textobranco{
         color: white;
         line-height: 40px;
     }
     #nav ul li a {
-        background-color: #0b2e13;
+        background-color: #0c5460;
         color: white;
     }
     #header h1 {
         margin-top: -10%;
-        font-size: 3em;
-        width: 99%;
-        line-height: 60px;
+        font-size: 2rem;
+        zoom: 1;
+    }
+    #header .celphone{
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    #header .box_contact{
+        margin-left: -20%;
     }
 
-    #header h5{
+    #header h2{
         font-size: 2em;
-        width: 98%;
-        color: #1b7943;
+        color: white;
     }
 
     #diferencial img{
@@ -332,7 +359,7 @@ nav{
 @media (min-width: 768px) and (max-width: 1050px) {
 
     #logo img{
-      width: 100%;
+      width: 60%;
       align-content: center;
     }
 
@@ -342,8 +369,12 @@ nav{
     }
 
     #nav ul li a{
-        font-size: 12px;
+        font-size: 15px;
         color: white;
+    }
+
+    #header .celphone{
+        margin-left: -15%;
     }
 
     #diferencial .row{
@@ -422,7 +453,6 @@ nav{
     #header{
         zoom: 1.3;
     }
-
     #advogados_novo h2{
         font-size: 2rem;
     }
@@ -442,7 +472,7 @@ nav{
     }
 
     nav{
-        background-color: #305f59;
+        background-color: transparent;
         height: 70px;
     }
 
@@ -454,42 +484,6 @@ nav{
         color: white;
         font-size: 1.2rem;
         border-bottom: 3px solid white;
-    }
-
-    #carousel .carousel-inner{
-        min-height: 120%;
-        max-height: 120%;
-    }
-
-    #carousel img{
-        min-height: 100%;
-        max-height: 100%;
-        width: 100%;
-        opacity: 0.4;
-    }
-
-    #carousel .imagemCor {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-    }
-
-    #carousel .carousel-caption{
-        font-family: 'Playfair Display', serif;
-        text-transform: uppercase;
-    }
-
-    #carousel .carousel-slide2{
-        margin-bottom: 7%;
-    }
-
-
-    #carousel .carousel-caption h1{
-        font-size: 5rem;
-    }
-
-    #carousel .carousel-caption h2,h3{
-        font-size: 3rem;
     }
 
     #diferencial {
@@ -504,9 +498,10 @@ nav{
     }
 
     #diferencial img{
-        width: 60%;
+        width: 20%;
         margin-left: 20%;
         margin-top: 10%;
+        padding: 5px;
     }
 
     #diferencial .card-footer{

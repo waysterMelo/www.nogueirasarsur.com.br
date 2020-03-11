@@ -37,7 +37,7 @@ while ($rs = mysqli_fetch_array($query)){
     <link rel="stylesheet" href="/libraries/css/aos.css">
     <script src="/libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-    <link rel="stylesheet" href="/libraries/css/estilo4.css">
+    <link rel="stylesheet" href="/libraries/css/estilo_1.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
 </head>
@@ -50,20 +50,38 @@ while ($rs = mysqli_fetch_array($query)){
 </div>
 
 <header id="teste">
-       <div class="container-fluid" id="header" style="background-image: url('../libraries/img/<?php echo $img1; ?>'); background-size: cover; height: 700px; background-attachment: fixed">
+       <div class="container-fluid" id="header"
+            style="background-image: url('../libraries/img/<?php echo $img1; ?>'); background-size: cover; height: 700px; background-attachment: fixed">
            <div class="row">
-               <div class="col-md-3 col-lg-4 col-sm-2" id="logo">
-                   <img src="/libraries/img/logo.jpg" title="Nogueira e Sarsur Advogados Logo" alt="logo" class="img-fluid">
+               <div class="col-md-12 col-12" id="address">
+                    <div class="text-center">
+                          <p class="py-3 font-weight-bold">
+                              <?php echo nl2br($endereco);?>
+                          </p>
+                    </div>
                </div>
-               <div class="col-md-3 col-lg-3 font-weight-bold text-center my-auto" style="color: #000;">
-                   <i class="fa fa-phone fa-2x textobranco"></i>
-                   <span class="textobranco"><?php echo $telefone ?></span>
-               </div>
-               <div class="col-md-6 col-lg-5 font-weight-bold text-center mx-auto my-auto border-left" style="color: #000;">
-                   <i class="fa fa-home fa-2x textobranco"></i>
-                   <span class="textobranco"><?php echo nl2br($endereco);?></span>
+
+               <div class="col-lg- col-12">
+                   <div class="row">
+                       <div class="col-md-5 col-12">
+                           <div class="" id="logo">
+                               <img src="/libraries/img/logo.jpg"
+                                    title="Nogueira e Sarsur Advogados Logo"
+                                    alt="logo" class="img-fluid p-1">
+                           </div>
+                       </div>
+                   <div class="col-md-4 col-12 row celphone">
+                       <p class="lead p-3 font-weight-bold my-auto"><?php echo $telefone ?></p>
+                   </div>
+
+                   <div class="col-md-4 col-12 row box_contact">
+                       <a href="contato.php" class="my-auto ml-auto text-secondary"><p class="lead contact font-weight-light text-white  p-4">Entre em contato</p></a>
+                   </div>
+                   </div>
                </div>
            </div>
+
+
            <div class="row justify-content-end">
                <nav class="navbar navbar-expand-md navbar-light">
                    <button class="navbar-toggler mx-auto" id="buttonnav" type="button" data-toggle="collapse" data-target="#nav">
@@ -86,9 +104,9 @@ while ($rs = mysqli_fetch_array($query)){
                            <li class="nav-item mx-1">
                                <a title="Trabalhe Conosco" href="works.php" class="nav-link">Trabalhe Conosco</a>
                            </li>
-                           <li class="nav-item mx-1">
-                               <a title="Contato" href="contato.php" class="nav-link">Contato</a>
-                           </li>
+<!--                           <li class="nav-item mx-1">-->
+<!--                               <a title="Contato" href="contato.php" class="nav-link">Contato</a>-->
+<!--                           </li>-->
                            <li class="border-left"></li>
                            <li class="nav-item mx-1">
                                <a title="Webmail" href="https://nogueirasarsur.com.br:2096" target="_blank" class="nav-link">Webmail</a>
@@ -99,10 +117,10 @@ while ($rs = mysqli_fetch_array($query)){
            </div>
            <div class="row terceira-row">
                <div class="col-lg-12 d-flex">
-                   <div class="my-auto mx-auto text-center">
-                       <h1 style="color: #1b7943" class="display-3 text-uppercase font-weight-bold pb-3"><?php echo $texto1; ?></h1>
+                   <div class="my-auto mr-auto text-left">
+                       <h1 data-aos="fade-right" data-aos-duration="3000" style="color: #1b7943" class="font-weight-bold py-3"><?php echo $texto1; ?></h1>
                        <hr>
-                    <h5 class="display-4 text-monospace font-weight-bold"><?php echo $texto2; ?></h5>
+                    <h2 data-aos-duration="3000" data-aos="fade-up" class="display-4 font-weight-light"><?php echo $texto2; ?></h2>
                    </div>
                </div>
            </div>

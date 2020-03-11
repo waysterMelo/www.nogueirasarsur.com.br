@@ -53,7 +53,7 @@ while ($rs = mysqli_fetch_array($query)){
     <link rel="stylesheet" href="libraries/css/aos.css">
     <script src="libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-    <link rel="stylesheet" href="libraries/css/estilo4.css">
+    <link rel="stylesheet" href="libraries/css/estilo_1.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
 </head>
@@ -67,17 +67,17 @@ while ($rs = mysqli_fetch_array($query)){
 
 
 <header id="escritorio-header">
-    <div class="container-fluid" id="header-escritorio" style="background-image: url('./libraries/img/<?php echo $header_img; ?>'); background-size: cover;height: auto; background-repeat: no-repeat; width: 100%;">
+    <div class="container-fluid" id="header-escritorio" style="background-image: url('./libraries/img/<?php echo $header_img; ?>'); background-size: cover; height: 450px; background-repeat: no-repeat; background-attachment: fixed">
         <div class="row">
             <div class="col-md-3 col-lg-4 col-sm-2" id="logo">
                 <img src="/libraries/img/logo.jpg" title="Nogueira e Sarsur Advogados Logo" alt="logo" class="img-fluid">
             </div>
-            <div class="col-md-3 col-lg-3 font-weight-bold text-center my-auto" style="color: #000;">
-                <i class="fa fa-phone fa-2x textobranco"></i>
+            <div class="col-md-3 col-lg-3 font-weight-light text-center my-auto" style="color: #000;">
+<!--                <i class="fa fa-phone fa-2x textobranco"></i>-->
                 <span class="textobranco"><?php echo $telefone ?></span>
             </div>
-            <div class="col-md-6 col-lg-5 font-weight-bold text-center mx-auto my-auto border-left" style="color: #000;">
-                <i class="fa fa-home fa-2x textobranco"></i>
+            <div class="col-md-6 col-lg-5 font-weight-light text-center mx-auto my-auto border-left" style="color: #000;">
+<!--                <i class="fa fa-home fa-2x textobranco"></i>-->
                 <span class="textobranco"><?php echo nl2br($endereco);?></span>
             </div>
         </div>
@@ -116,9 +116,9 @@ while ($rs = mysqli_fetch_array($query)){
         </div>
         <div class="row justify-content-center">
             <div class="text-capitalize text-center pb-5">
-                <h1 style="color: white;" class="font-weight-bold mt-5 py-4 display-4 "><?php echo $header_texto;?></h1>
-                <a href="index.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
-                <span class="text-white text-capitalize"> nosso escritório</span>
+                <h1 style="color: #0c5460;" class="font-weight-normal mt-5 py-4 display-4 "><?php echo $header_texto;?></h1>
+                <a href="index.php" class="text-dark">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
+                <span class="text-success text-capitalize"> nosso escritório</span>
             </div>
         </div>
     </div>
@@ -139,7 +139,7 @@ while ($rs = mysqli_fetch_array($query)){
     </div>
 </div>
 
-<div style="background-image: url('./libraries/img/<?php echo $img1;?>'); height: 300px; background-size: cover; background-attachment: fixed;filter:grayscale(200%)"></div>
+<div style="background-image: url('./libraries/img/<?php echo $img1;?>'); height: 400px; background-size: cover; width: 100%"></div>
 
     <div class="container-fluid py-5">
         <div class="row pt-5">
@@ -174,7 +174,7 @@ while ($rs = mysqli_fetch_array($query)){
         </div>
     </div>
 
-    <div style="background-image: url('./libraries/img/<?php echo $img3;?>'); height: 300px; background-size: cover; background-attachment: fixed;filter:grayscale(200%)"></div>
+    <div style="background-image: url('./libraries/img/<?php echo $img3;?>'); height: 400px; background-size: cover;"></div>
 
 <section class="pb-2" style="background-color: transparent" id="advogados_novo" >
     <div class="container-fluid">
