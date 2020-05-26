@@ -160,46 +160,46 @@
     </div>
 </section>
 
-<!--<section class="pb-2" style="background-color: transparent" id="advogados_novo" >-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="py-5 text-center">-->
-<!--            <h2 class="font-weight-bold text-uppercase">Advogados</h2>-->
-<!--            <i class="fa fa-star"></i>-->
-<!--            <i class="fa fa-star"></i>-->
-<!--            <i class="fa fa-star"></i>-->
-<!--            <i class="fa fa-star"></i>-->
-<!--            <i class="fa fa-star"></i>-->
-<!--        </div>-->
-<!--        <div data-aos="zoom-in" data-aos-duration="1500" class="row text-center justify-content-center mb-4">-->
-<!--            --><?php
-//                $sql = "SELECT * from advogados";
-//                $query = mysqli_query($conn, $sql);
-//                while ($rs = mysqli_fetch_array($query)){
-//                    $id = $rs['id'];
-//                    $nomeSocia = $rs['nome'];
-//                    $cargo = $rs['cargo'];
-//                    $email = $rs['email'];
-//                    $area = $rs['areas'];
-//                    $url = $rs['url'];
-//
-//                    echo "
-//                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 15rem\">
-//                    <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
-//                    <div class=\"card-heading d-flex\">
-//                        <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
-//                    </div>
-//                    <div class=\"card-body\">
-//                        <p>$cargo</p>
-//                        <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
-//                        <a style=\"color: #305f59;\" class=\"font-weight-light btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
-//                    </div>
-//                </div>
-//                    ";
-//                }
-//                ?>
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="pb-2" style="background-color: transparent" id="advogados_novo" >
+    <div class="container-fluid">
+        <div class="py-5 text-center">
+            <h2 class="font-weight-bold text-uppercase">Advogados</h2>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500" class="row text-center justify-content-center mb-4">
+            <?php
+                $sql = "SELECT * from advogados";
+                $query = mysqli_query($conn, $sql);
+                while ($rs = mysqli_fetch_array($query)){
+                    $id = $rs['id'];
+                    $nomeSocia = $rs['nome'];
+                    $cargo = $rs['cargo'];
+                    $email = $rs['email'];
+                    $area = $rs['areas'];
+                    $url = $rs['url'];
+
+                    echo "
+                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 15rem\">
+                    <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
+                    <div class=\"card-heading d-flex\">
+                        <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
+                    </div>
+                    <div class=\"card-body\">
+                        <p>$cargo</p>
+                        <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
+                        <a style=\"color: #305f59;\" class=\"font-weight-light btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
+                    </div>
+                </div>
+                    ";
+                }
+                ?>
+        </div>
+    </div>
+</section>
 
 <div class="container py-3">
     <div class="py-5 text-center">
@@ -210,9 +210,9 @@
         <div class="col-lg-6 text-left news">
             <?php
             $html ='';
-            $url= 'http://www.tst.jus.br/web/guest/noticias/-/asset_publisher/89Dk/rss';
+            $url= 'http://www.tst.jus.br/web/guest/noticias/-/journal/rss/10157/57294?refererPlid=10730';
             $xml = simplexml_load_file($url);
-            for ($i = 0; $i < 4; $i++){
+            for ($i = 0; $i < 3; $i++){
                 $title = $xml->channel->item[$i]->title;
                 $description = $xml->channel->item[$i]->description;
                 $pubDate = $xml->channel->item[$i]->pubDate;
@@ -222,9 +222,11 @@
                 $nowDate = $data->format('d-m-Y H:i');
                 $html .= " <p class='text-danger' style='font-weight: bold'>$nowDate</p>
                                     <p class='text-dark'>$title</p>
-                                    <p class=''>$description</p>
+                                    <div class='' style='height: 100px; width: auto; line-height: 15px; overflow: auto; text-overflow: ellipsis;'> 
+                                        <p>$description</p>
+                                      </div>
 
-                                 <div class=''>
+                                 <div class='mt-4'>
                                  <a style='border: 2px solid #1b7943' href='$link' class='text-success p-1'> leia mais
                                   <i class='fa fa-plus mx-2'></i></a>
                                     </div>
@@ -236,9 +238,9 @@
         <div class="col-lg-6 col-md-12 text-left news">
             <?php
             $html ='';
-            $url= 'http://www.tst.jus.br/web/guest/noticias/-/asset_publisher/89Dk/rss';
+            $url= 'http://www.tst.jus.br/web/guest/noticias/-/journal/rss/10157/57294?refererPlid=10730';
             $xml = simplexml_load_file($url);
-            for ($i = 4; $i < 8; $i++){
+            for ($i = 3; $i < 6; $i++){
                 $title = $xml->channel->item[$i]->title;
                 $description = $xml->channel->item[$i]->description;
                 $pubDate = $xml->channel->item[$i]->pubDate;
@@ -248,8 +250,10 @@
                 $link = $xml->channel->item[$i]->link;
                 $html .= " <p class='font-weight-bold text-danger'>$nowDate</p>
                                     <p class='text-dark'>$title</p>
-                                    <p class=''>$description</p>
-                                 <div class=''>
+                                 <div class='' style='height: 100px; width: auto; line-height: 15px; overflow: auto; text-overflow: ellipsis;'> 
+                                        <p>$description</p>
+                                      </div>
+                                  <div class='mt-4'>
                                  <a  style='border: 2px solid #1b7943' href='$link'  class='text-success p-1'> leia mais  <i class='fa fa-plus mx-2'></i></a>
                                     </div>
                              <hr>
