@@ -34,9 +34,7 @@ body,html{
 
 #header {
     height: auto;
-    background-color: transparent;
-    color: white;
-    font-size: 12px;
+
 }
 
 #header .terceira-row{
@@ -45,47 +43,19 @@ body,html{
     text-transform: none;
 }
 
-#address p{
-    border-bottom: 1px solid white;
-    font-size: 14px;
-}
-
-#header .celphone{
-    margin-left: -9%;
-}
-#header .celphone p{
-    border: 1px solid white;
-    color: #1b7943;
-    font-size: 17px;
-}
-
 #nav ul li a {
-    color: white;
+    color:#0c5460;
     font-size: 15px;
     font-family: 'Muli', sans-serif;
     font-weight: normal;
+    width: max-content;
 }
 #nav ul li a:hover {
-    color: #0c5460;
+    color:white;
+    background-color: #000;
     font-size: 15px;
     border-bottom: 1px solid white;
 
-}
-
-#logo img{
-    width: 65%;
-}
-
-nav{
-    background-color: transparent;
-}
-
-#header .contact{
-    background-color: #1b7943;
-}
-
-#header h5{
-    color: #1b7943;
 }
 
 #diferencial {

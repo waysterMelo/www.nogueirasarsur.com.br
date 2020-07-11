@@ -175,7 +175,7 @@
                 $sql = "SELECT * from advogados";
                 $query = mysqli_query($conn, $sql);
                 while ($rs = mysqli_fetch_array($query)){
-                    $id = $rs['id'];
+//                     $id = $rs['id'];
                     $nomeSocia = $rs['nome'];
                     $cargo = $rs['cargo'];
                     $email = $rs['email'];
