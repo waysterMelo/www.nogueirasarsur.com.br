@@ -19,47 +19,6 @@
             $texto_img3 = $rs['texto_img3'];
         }
     ?>
-        <div class="row mt-3" style="margin-left: -5%">
-            <div class="col-lg-4 col-md-4 col-12">
-              <div class="card border-0">
-                  <div class="card-img-top d-flex">
-                      <img src="/libraries/img/<?php echo $imagem ?>"
-                           alt="<?php echo $titulo; ?>" class="img-fluid mx-auto my-auto pb-3">
-                  </div>
-                  <div class="card-body text-center">
-<!--                        <h6>--><?php //echo $titulo ?><!--</h6>-->
-                      <p><?php echo $texto?></p>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="card border-0">
-                    <div class="card-img-top d-flex">
-                        <img src="/libraries/img/<?php echo $img2 ?>"
-                             alt="<?php echo $titulo; ?>" class="img-fluid mx-auto my-auto pb-3">
-                    </div>
-                    <div class="card-body text-center bg-white">
-                        <!--                        <h6>--><?php //echo $titulo ?><!--</h6>-->
-                        <p><?php echo $texto_img2?></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="card border-0">
-                    <div class="card-img-top d-flex">
-                        <img src="/libraries/img/<?php echo $img3 ?>"
-                             alt="<?php echo $titulo; ?>" class="img-fluid mx-auto my-auto pb-3">
-                    </div>
-                    <div class="card-body text-center bg-white">
-                        <!--                        <h6>--><?php //echo $titulo ?><!--</h6>-->
-                        <p><?php echo $texto_img3?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
 
 <section class="pb-5" id="about">
     <?php

@@ -32,16 +32,13 @@ body,html{
     border: none;
 }
 
-#header {
-    height: auto;
-
+#adress p{
+    color:#0c5460;
+    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
 }
 
-#header .terceira-row{
-    margin-top: 7%;
-    color: #0b2e13;
-    text-transform: none;
-}
 
 #nav ul li a {
     color:#0c5460;
@@ -56,6 +53,14 @@ body,html{
     font-size: 15px;
     border-bottom: 1px solid white;
 
+}
+
+#img_logo_menu{
+    width: 60%;
+}
+
+#main_txt{
+    margin-top: 7%;
 }
 
 #diferencial {
