@@ -6,6 +6,9 @@ body,html{
     line-height: 20px;
     padding: 0;
     margin: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+
 }
 
 #preloader{
@@ -44,25 +47,38 @@ body,html{
 }
 
 #nav ul li a {
-    color: #1b7943;
     font-size: 15px;
     font-family: 'Muli', sans-serif;
-    font-weight: bold;
-    text-transform: none;
+    width: max-content;
+}
+#nav ul li a:hover {
+    color: white;
+    background-color: #679267;
+    font-size: 15px;
+
 }
 
-#nav ul li a:hover {
-    color: #1b7943;
-    font-size: 15px;
-    border-bottom: 1px solid black;
+#img_logo_menu{
+    width: 60%;
 }
+
+
+#address p{
+    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+}
+
 #advogados_novo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Muli', sans-serif;
     background-color: whitesmoke;
 }
 
-.btn-grad {background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)}
-.btn-grad:hover { background-position: right center; }
+.btn-grad {
+    background-image: linear-gradient(#A9BA9D, #679267);
+}
+.btn-grad:hover {
+    opacity: 0.7;
+}
 
 #advogados_novo span{
     margin-bottom: 45%;
@@ -81,4 +97,9 @@ body,html{
 #advogados_novo  .card-body{
     min-height: 150px;
     max-height: 150px;
+}
+
+#footer{
+    font-size: smaller;
+    font-weight: lighter;
 }

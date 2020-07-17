@@ -39,7 +39,7 @@ while ($rs = mysqli_fetch_array($query)){
     <link rel="stylesheet" href="/libraries/css/aos.css">
     <script src="/libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-    <link rel="stylesheet" href="/libraries/css/main1.css">
+    <link rel="stylesheet" href="/libraries/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
@@ -52,14 +52,14 @@ while ($rs = mysqli_fetch_array($query)){
 
 <header id="teste">
        <div class="container-fluid" id="header"
-            style="background-image: url('../libraries/img/<?php echo $img1; ?>'); background-size: cover; height: 600px;">
+            style="background-image: url('../libraries/img/<?php echo $img1; ?>'); background-size: cover; height: 600px; background-attachment: fixed;">
            
             <div class="row" id="adress">   
-            <div class="col-lg-12 col-md-12 col-12 bg-white">  
+            <div class="col-lg-12 col-md-12 col-12 bg-light p-2">  
                 <div class="text-center">
-                <p><i class="fa fa-globe"></i> <?php echo $endereco ?>
+                <p><i class="fa fa-globe mx-2"></i> <?php echo $endereco ?>
                 <span class="border-left mx-2"></span> 
-                <span class="mx-4">  
+                <span class="mx-4">  <i class="fa fa-phone mx-1"></i>
                  <?php echo $telefone; ?>
                  </span> 
                  </p>
@@ -82,20 +82,24 @@ while ($rs = mysqli_fetch_array($query)){
                                <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de atuação</a>
+                               <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de Atuação</a>
                            </li>
                            <li class="nav-item">
                                <a title="Advogados" href="./advogados/" class="nav-link">Advogados</a>
                            </li>
-                           <li class="nav-item">
-                               <a title="Trabalhe Conosco" href="works.php" class="nav-link">Trabalhe Conosco</a>
-                           </li>
-                          <li class="nav-item mx-1">
-                            <a title="Contato" href="contato.php" class="nav-link">Contato</a>
+                         
+                           <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contato
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="contato.php">Entre em contato <i class="fa fa-mail-forward"></i></a>
+                                <a class="dropdown-item" href="works.php">Trabalhe conosco <i class="fa fa-suitcase"></i></a>
+                                </div>
                          </li>
                            <li class="border-left"></li>
                            <li class="nav-item mx-1">
-                               <a title="Webmail" href="https://nogueirasarsur.com.br:2096" target="_blank" class="nav-link">Webmail</a>
+                               <a title="Webmail" href="https://nogueirasarsur.com.br:2096" target="_blank" class="nav-link">Webmail <i class="fa fa-envelope"></i></a>
                            </li>
                        </ul>
                    </div>
@@ -104,7 +108,10 @@ while ($rs = mysqli_fetch_array($query)){
 
       
         <div class="mt-5 justify-content-center">
-                    <h1 id="main_txt" data-aos="fade-right" data-aos-duration="3000" style="color: #0c5460" 
+                    <h1 id="main_txt" data-aos="fade-right" data-aos-duration="3000" 
+                    style="background: -webkit-linear-gradient(#A9BA9D, #679267;);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #679267;; font-size: 4rem" 
                     class="font-weight-bold py-5 text-center display-3">
                        <?php echo $texto1; ?></h1>
                        <hr style="background-color:white; width:20%">

@@ -47,7 +47,7 @@ gtag('config', 'UA-145823645-1', { 'optimize_id': 'GTM-D52NT8H'});
     <link rel="stylesheet" href="../libraries/css/font-awesome.min.css">
     <link rel="stylesheet" href="../libraries/css/animate.css">
     <link rel="stylesheet" href="../libraries/css/aos.css">
-    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="../libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
 
@@ -62,50 +62,59 @@ gtag('config', 'UA-145823645-1', { 'optimize_id': 'GTM-D52NT8H'});
 </div>
 
 <div class="container-fluid" id="header">
-    <div class="row">
-        <div class="col-md-12 col-lg-4 col-sm-2" id="logo">
-            <img src="../libraries/img/<?php echo $logo; ?>" title="Nogueira e Sarsur Advogados Logo" alt="logo" class="img-fluid">
-        </div>
-        <div class="col-md-4 col-md-12 col-lg-2 font-weight-light text-center my-auto" style="color: #000;">
-<!--           <i class="fa fa-phone fa-2x"></i>-->
-            <span><?php echo $telefone ?></span>
-        </div>
-        <div class="col-md-4 col-md-12 col-lg-6 font-weight-light text-center mx-auto my-auto border-left" style="color: #000;">
-<!--            <i class="fa fa-home fa-2x"></i>-->
-            <span><?php echo nl2br($endereco);?></span>
-        </div>
-    </div>
+<div class="row" id="address">   
+            <div class="col-lg-12 col-md-12 col-12 bg-light text-dark p-2">  
+                <div class="text-center">
+                <p><i class="fa fa-globe mx-2"></i> <?php echo $endereco ?>
+                <span class="border-left mx-2"></span> 
+                <span class="mx-4"> 
+                <i class="fa fa-phone"></i> 
+                 <?php echo $telefone; ?>
+                 </span> 
+                 </p>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+             <a class="navbar-brand" href="index.php">
+                 <img id="img_logo_menu" alt="logo" src="../libraries/img/logo.jpg" 
+                 class="img-fluid col-12">
+             </a>
+                   <button class="navbar-toggler mx-auto" id="buttonnav" type="button" data-toggle="collapse" data-target="#nav">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="nav">
+                       <ul class="navbar-nav mx-auto text-center">
+                           <li class="nav-item">
+                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
+                           </li>
+                           <li class="nav-item">
+                               <a title="Escritório" href="../escritorio.php" class="nav-link">Institucional</a>
+                           </li>
+                           <li class="nav-item">
+                               <a title="Áreas de atuação" href="../services.php" class="nav-link">Áreas de Atuação</a>
+                           </li>
+                           <li class="nav-item active">
+                               <a title="Advogados" href="/advogados/" class="nav-link">Advogados</a>
+                           </li>
+                      
+                           <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contato
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../contato.php">Entre em contato <i class="fa fa-mail-forward"></i></a>
+                                <a class="dropdown-item" href="../works.php">Trabalhe conosco <i class="fa fa-suitcase"></i></a>
+                                </div>
+
+                           <li class="border-left"></li>
+                           <li class="nav-item mx-1">
+                               <a title="Webmail" href="https://nogueirasarsur.com.br:2096" target="_blank" class="nav-link">Webmail <i class="fa fa-envelope"></i></a>
+                           </li>
+                       </ul>
+                   </div>
+               </nav>
+            </div>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item active mx-1">
-                <a title="Página Inicial" href="../index.php" class="nav-link">Página Inicial</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Escritório" href="../escritorio.php" class="nav-link">Escritório</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Áreas de atuação" href="../services.php" class="nav-link">Áreas de atuação</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Advogados" href="index.php" class="nav-link">Advogados</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Trabalhe Conosco" href="../works.php" class="nav-link">Trabalhe Conosco</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Contato" href="../contato.php" class="nav-link">Contato</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a title="Webmail" href="https://nogueirasarsur.com.br:2096" target="_blank" class="nav-link border-left">Webmail</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 
 <?php
@@ -125,7 +134,9 @@ while ($rs = mysqli_fetch_array($query)){
     <div class="container-fluid" id="resume_adv">
         <div class="py-5 text-center">
             <div class="text-capitalize">
-                <h1 style="color: #0c5460; font-size: 4rem" class="font-weight-bold my-4 text-capitalize"><?php echo $texto; ?></h1>
+                <h1 style="background: -webkit-linear-gradient(#A9BA9D, #A9BA9D);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; font-size: 4rem" class="font-weight-bold my-4 text-capitalize"><?php echo $texto; ?></h1>
                 <a href="../index.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <a href="index.php" class="text-white">advogados</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <span class="text-white"><?php echo $nome; ?></span>
@@ -138,9 +149,9 @@ while ($rs = mysqli_fetch_array($query)){
     <div class="container">
         <div class="row">
             <div class="col-lg-12 mx-auto text-center">
-                <div class="card" style="background-color: #305f59;">
-                    <h1 class="text-center font-weight-bold text-white"><?php echo $nome; ?></h1>
-                    <div class="card-heading" style="background-color: #305f59">
+                <div class="card" style="background-image: linear-gradient(#A9BA9D, #679267);">
+                    <h1 class="text-center font-weight-bold text-white p-2"><?php echo $nome; ?></h1>
+                    <div class="card-heading">
                         <h2 class="text-white text-center text-capitalize font-weight-bold py-3">Informações Pessoais</h2>
                     </div>
                     <div class="card-body" style="background-color: whitesmoke">
@@ -152,7 +163,7 @@ while ($rs = mysqli_fetch_array($query)){
                             <li class="list-group-item"><p class="font-weight-bold"><?php echo $formacao; ?></p></li>
                         </ul>
                     </div>
-                    <div class="card-footer" style="background-color: #305f59"></div>
+                    <div class="card-footer" style="background-color: #679267"></div>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -166,7 +177,7 @@ while ($rs = mysqli_fetch_array($query)){
 </section>
 
 
-<footer id="footer" class="pt-4" style="background-color: #305f59; color: #000;">
+<footer id="footer" class="pt-4" style="background-image: linear-gradient(#A9BA9D, #679267);">
     <div class="container-fluid">
        <div class="row">
            <div class="col-lg-3 col-md-12">
@@ -178,7 +189,7 @@ while ($rs = mysqli_fetch_array($query)){
 
            </div>
            <div class="col-lg-3 col-md-4 d-none d-sm-block">
-               <h6 class="font-weight-bold">Menu</h6>
+               <p class="font-weight-lighter text-light">Menu</p>
                <ul class="nav flex-column">
                    <li class="nav-item">
                        <a class="nav-link text-white font-weight-bold" href="../index.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
@@ -187,7 +198,7 @@ while ($rs = mysqli_fetch_array($query)){
                        <a class="nav-link text-white font-weight-bold" href="index.php"><i class="fa fa-chevron-right mx-2"></i>Advogados</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="../escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Escritorio</a>
+                       <a class="nav-link text-white font-weight-bold" href="../escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Institucional</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link text-white font-weight-bold" href="../works.php"><i class="fa fa-chevron-right mx-2"></i>Trabalhe conosco</a>
@@ -195,13 +206,11 @@ while ($rs = mysqli_fetch_array($query)){
                    <li class="nav-item">
                        <a class="nav-link text-white font-weight-bold" href="../contato.php"><i class="fa fa-chevron-right mx-2"></i>Contato</a>
                    </li>
-                   <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="../admin/login.php"><i class="fa fa-chevron-right mx-2"></i>Login</a>
-                   </li>
+            
                </ul>
            </div>
            <div class="col-lg-3 col-md-6">
-               <h6 class="font-weight-bold">Contato</h6>
+               <p class="font-weight-lighter text-light">Contato</p>
                <ul class="nav flex-column">
                    <li class="nav-item">
                        <address class="nav-link text-white font-weight-bold">
@@ -215,18 +224,21 @@ while ($rs = mysqli_fetch_array($query)){
                    </li>
                </ul>
            </div>
-           <div class="col-lg-3 col-md-4" id="facebook_footer">
-               <h6 class="font-weight-bold">Rede Social</h6>
-               <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                   <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-                       <a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+          <div class="col-lg-3 col-md-4" id="facebook_footer">
+               <div class="fb-page" data-href="https://www.facebook.com/nogueirasarsuradvogados/" 
+                    data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                    data-hide-cover="false" data-show-facepile="true">
+                   <blockquote cite="https://www.facebook.com/nogueirasarsuradvogados/" class="fb-xfbml-parse-ignore">
+                       <a href="https://www.facebook.com/nogueirasarsuradvogados/">Nogueira &amp; Sarsur Advogados</a>
+                   </blockquote>
                </div>
+           </div>
            </div>
        </div>
     </div>
 </footer>
 
-<div id="copyright" style="background-color: black; color: white;">
+<div id="copyright" style="background-color: black; color: white; font-size:smaller;">
     <div class="container pt-3 mx-auto row">
         <p class="font-weight-bold text-capitalize"><?php echo date ('Y'); ?>  &copy; todos os direitos reservados Nogueira & Sarsur Advogados  </p>
         <div class="ml-auto">

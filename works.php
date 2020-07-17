@@ -35,7 +35,7 @@ while($rs = mysqli_fetch_array($query)){
     <link rel="stylesheet" href="libraries/css/aos.css">
     <script src="libraries/js/jquery.min.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-    <link rel="stylesheet" href="libraries/css/estilo_1.css">
+    <link rel="stylesheet" href="libraries/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
 </head>
@@ -132,12 +132,13 @@ while($rs = mysqli_fetch_array($query)){
                 <div class="form-group">
                     <select name="formacao" class="form-control" style="border: none;">
                         <option>Selecione sua formação</option>
-                        <option>3 grau imcompleto</option>
+                        <option>3 grau incompleto</option>
                         <option>3 grau completo</option>
                         <option>Superior em andamento</option>
                         <option>Superior completo</option>
                         <option>Pós graduação</option>
                         <option>MBA</option>
+  <option>Estágio</option>
                     </select>
                 </div>
                 <div class="form-group">

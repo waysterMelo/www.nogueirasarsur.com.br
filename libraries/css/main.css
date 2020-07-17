@@ -6,6 +6,8 @@ body,html{
     line-height: 20px;
     padding: 0;
     margin: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
 }
 
 #preloader{
@@ -33,30 +35,27 @@ body,html{
 }
 
 #adress p{
-    color:#0c5460;
     font-size: 15px;
-    font-family: 'Muli', sans-serif;
-    font-weight: normal;
 }
 
 
 #nav ul li a {
-    color:#0c5460;
     font-size: 15px;
-    font-family: 'Muli', sans-serif;
-    font-weight: normal;
     width: max-content;
 }
 #nav ul li a:hover {
     color:white;
-    background-color: #000;
+    background-color: #679267;
     font-size: 15px;
-    border-bottom: 1px solid white;
-
 }
 
 #img_logo_menu{
     width: 60%;
+}
+
+#about .textAbout{
+    font-size: 16px;
+    line-height: 30px;
 }
 
 #main_txt{
@@ -65,11 +64,11 @@ body,html{
 
 #diferencial {
     background-color: white;
-    border-bottom: 1px solid #1b7943;
+    border-bottom: 1px solid #679267;
 }
 
 #diferencial .card-body p{
-    color: #0c5460;
+    color:  #679267;
 }
 
 #diferencial img{
@@ -108,10 +107,7 @@ body,html{
 }
 
 .btn-grad {
-    background: #00bf8f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: linear-gradient(#A9BA9D, #679267);
 }
 .btn-grad:hover {
    opacity: 0.7;
@@ -140,17 +136,17 @@ body,html{
     width: 100%;
     min-height: 300px;
     max-height: 300px;
-    -webkit-box-shadow: -11px -11px 0px 7px #305F49;
-    box-shadow: -11px -11px 0px 7px #305F49;
+    -webkit-box-shadow: -11px -11px 0px 7px #679267;
+    box-shadow: -11px -11px 0px 7px #679267;
 }
 
-.servicos2 img{
-    width: 100%;
-    min-height: 300px;
-    max-height: 300px;
-    -webkit-box-shadow: 11px -9px 0px 7px #305F49;
-    box-shadow: 11px -9px 0px 7px #305F49;
-}
+/*.servicos2 img{*/
+/*    width: 100%;*/
+/*    min-height: 300px;*/
+/*    max-height: 300px;*/
+/*    -webkit-box-shadow: 11px -9px 0px 7px #305F49;*/
+/*    box-shadow: 11px -9px 0px 7px #305F49;*/
+/*}*/
 
 #descricao_servicos p {
     min-height: 350px;
@@ -163,23 +159,22 @@ body,html{
     border: none;
     color: #000;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Muli', sans-serif;
 }
 
 #contato{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Muli', sans-serif;
     line-height: 120%;
     font-weight: bold;
 }
 
 #descricao_adv {
     margin-top: 10%;
-    font-family: 'Playfair Display', serif;
 }
 
 #descricao_adv .card img{
     border-radius: 50%;
-    border: 5px solid #305F49;
+    border: 5px solid #679267;
 }
 
 #descricao_adv .card p{
@@ -187,8 +182,8 @@ body,html{
 }
 
 #footer{
-    font-family: 'Playfair Display', serif;
-    font-weight: normal;
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 #footer img {
@@ -259,10 +254,10 @@ body,html{
         font-weight: bold;
     }
 #texto-s h2{
-    font-size: 20px;
+    font-size: 15px;
 }
 #texto-s h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 #descricao_servicos{
     margin-top: 30%;

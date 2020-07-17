@@ -1,26 +1,6 @@
 <?php include ('./includes/menu.php')?>
 
-
-<div class="container-fluid py-4" id="diferencial">
-    <?php
-        $sql = "select * from diferencial";
-        $query = mysqli_query($conn, $sql);
-        while($rs = mysqli_fetch_array($query)){
-            $imagem = $rs['imagem'];
-            $titulo = $rs['titulo'];
-            $texto = $rs['texto'];
-
-            $img2 = $rs['imagem2'];
-            $titulo_img2  = $rs['titulo_img2'];
-            $texto_img2 = $rs['texto_img2'];
-
-            $img3 = $rs['imagem3'];
-            $titulo_img3 = $rs['titulo_img3'];
-            $texto_img3 = $rs['texto_img3'];
-        }
-    ?>
-
-<section class="pb-5" id="about">
+<section class="py-3" id="about">
     <?php
     $sql = "select * from sobre";
     $query = mysqli_query($conn,$sql);
@@ -32,30 +12,15 @@
         $img3 = $rs['img3'];
     }
     ?>
-    <div class="container">
-           <div class="text-center pt-5">
-               <h2 class="my-3 font-weight-bold text-uppercase" style="color: #000;font-family: 'Muli', sans-serif;"><?php echo $titulo; ?></h2>
-               <hr style="width: 20%">
-           </div>
-        <div class="row justify-content-center py-3">
-            <div class="col-lg-10">
-                <h3 class="text-center"
-                    style="font-family: 'Muli', sans-serif;
-                     line-height: 50px;color: #305f59;"><?php echo $texto1 ?></h3>
-            </div>
-        </div>
+    <div class="container-fluid my-5">
+           
         <div class="row">
-            <div class="col-lg-4 col-sm-4 col-12 d-flex">
+            <div class="col-lg-6 col-md-6 col-12 d-flex">
+                <h3 class="text-left textAbout my-auto"><?php echo $texto1 ?></h3>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12 d-flex">
                 <img src="libraries/img/<?php echo $img1?>"
-                     alt="escritorio" class=" w-75 img-thumbnail mx-auto mb-3">
-            </div>
-            <div class="col-lg-4 col-sm-4 col-6 d-flex">
-                <img src="libraries/img/<?php echo $img2?>"
-                     alt="escritorio" class="mb-3 w-75 img-thumbnail mx-auto">
-            </div>
-            <div class="col-lg-4 col-sm-4 col-6 d-flex">
-                <img src="libraries/img/<?php echo $img3?>"
-                     alt="escritorio" class="mb-3 w-75 img-thumbnail mx-auto">
+                     alt="escritorio" class=" w-100 my-auto img-thumbnail mx-auto">
             </div>
         </div>
        </div>
@@ -85,7 +50,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-10 col-md-12 pb-5">
-                <p class="font-normal pb-2 p_areas text-center" style="line-height: 20px"><?php echo $txt;?></p>
+                <p class="font-normal py-5 p_areas text-center" style="line-height: 20px"><?php echo $txt;?></p>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="card" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="800">
@@ -142,7 +107,7 @@
                     $url = $rs['url'];
 
                     echo "
-                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 15rem\">
+                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 18rem\">
                     <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
                     <div class=\"card-heading d-flex\">
                         <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
@@ -150,7 +115,7 @@
                     <div class=\"card-body\">
                         <p>$cargo</p>
                         <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
-                        <a style=\"color: #305f59;\" class=\"font-weight-light btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
+                        <a style=\"color: #305f59;\" class=\"font-weight-light mx-auto btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
                     </div>
                 </div>
                     ";
