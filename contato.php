@@ -82,7 +82,7 @@ while($rs = mysqli_fetch_array($query)){
                                <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de atuação</a>
+                               <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de Atuação</a>
                            </li>
                            <li class="nav-item">
                                <a title="Advogados" href="./advogados/" class="nav-link">Advogados</a>
@@ -93,8 +93,8 @@ while($rs = mysqli_fetch_array($query)){
                                 Contato
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="contato.php">Envie um email <i class="fa fa-mail-forward"></i></a>
-                                <a class="dropdown-item" href="works.php">Trabalhe Conosco <i class="fa fa-suitcase"></i></a>
+                                <a class="dropdown-item" href="contato.php">Entre em contato <i class="fa fa-mail-forward"></i></a>
+                                <a class="dropdown-item" href="works.php">Trabalhe conosco <i class="fa fa-suitcase"></i></a>
                                 </div>
                          </li>
                            <li class="border-left"></li>

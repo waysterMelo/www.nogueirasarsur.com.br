@@ -91,7 +91,7 @@ while ($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="index.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item active">
                                <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
@@ -142,7 +142,7 @@ while ($rs = mysqli_fetch_array($query)){
             </div>
         </div>
         <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-8 bg-white" id="texto-s">
-            <h2 class="font-weight-normal pb-4 pt-3 text-center"><?php echo $txt1;?></h2>
+            <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $txt1;?></h5>
         </div>
 
     </div>
@@ -160,7 +160,7 @@ while ($rs = mysqli_fetch_array($query)){
             <div data-aos="fade-up" data-aos-duration="2000" class="col-lg-8 bg-white">
               <div class="row">
                   <div id="texto-s" class="col-md-12 col-lg-12">
-                      <h2 class="font-weight-normal pb-4 pt-3 text-center"><?php echo $texto2; ?></h2>
+                      <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $texto2; ?></h5>
                   </div>
               </div>
             </div>
@@ -177,8 +177,8 @@ while ($rs = mysqli_fetch_array($query)){
                 </div>
             </div>
             <div  id="texto-s" data-aos="fade-left" data-aos-duration="2000"  class="col-lg-8 bg-white">
-                <h2 class="font-weight-normal pb-4 pt-3 text-center"><?php echo $texto3;?></h2>
-                <p class="text-center"><?php echo $descricao3;?></p>
+                <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $texto3;?></h5>
+                <h6 class="text-center"><?php echo $descricao3;?></h6>
             </div>
         </div>
     </div>
