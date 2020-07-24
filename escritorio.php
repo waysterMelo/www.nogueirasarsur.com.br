@@ -134,35 +134,35 @@ while ($rs = mysqli_fetch_array($query)){
 </header>
 
 
-<div class="container-fluid py-5">
-    <div class="row pt-5">
-        <div class="col-md-4 mx-auto ml-5 col-12 " style="background-color: white;">
-            <div id="texto-s" data-aos="zoom-in" data-aos-duration="2000" class="card bg-white p-5 border-0" >
-                <h1 class="text-center" style="color: #305f59"><?php echo $titulo; ?></h1>
-            </div>
-        </div>
-        <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-8 bg-white" id="texto-s">
-            <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $txt1;?></h5>
+<div class="container py-5">
+    <div class="row pt-5 justify-content-center">
+        <div class="col-lg-2" >
+            <h1 data-aos="zoom-in" data-aos-duration="2000"  class="text-center" style="color: #305f59">
+                <?php echo $titulo; ?></h1>
         </div>
 
+        <div class="col-lg-9 pt-4">
+          <div class="row">
+              <h5 data-aos="zoom-right" data-aos-duration="2500" class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $txt1;?></h5>
+          </div>
+        </div>
     </div>
 </div>
 
 <div style="background-image: url('./libraries/img/<?php echo $img1;?>'); height: 400px; background-size: cover; width: 100%"></div>
 
     <div class="container-fluid py-5">
-        <div class="row pt-5">
-            <div class="col-md-4 mx-auto ml-5" style="background-color: white;">
-                <div id="texto-s" data-aos-duration="2000" data-aos="zoom-in" class="card border-0 bg-white  p-5">
-                    <h1 class="text-center" style="color: #305f59"><?php echo $titulo2?></h1>
-                </div>
+        <div class="row pt-5 justify-content-center">
+            <div class="col-lg-2" >
+                <h1 data-aos="zoom-in" data-aos-duration="2000"  class="text-center" style="color: #305f59">
+                    <?php echo $titulo2; ?></h1>
             </div>
-            <div data-aos="fade-up" data-aos-duration="2000" class="col-lg-8 bg-white">
-              <div class="row">
-                  <div id="texto-s" class="col-md-12 col-lg-12">
-                      <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $texto2; ?></h5>
-                  </div>
-              </div>
+
+            <div class="col-lg-9 pt-4">
+                <div class="row">
+                    <h5 data-aos="zoom-right" data-aos-duration="2500" class="font-weight-normal pb-4 pt-3 text-justify">
+                        <?php echo $texto2;?></h5>
+                </div>
             </div>
         </div>
     </div>
@@ -170,15 +170,20 @@ while ($rs = mysqli_fetch_array($query)){
     <div style="background-image: url('./libraries/img/<?php echo $img2;?>'); height: 300px; background-size: cover; background-attachment: fixed; filter:grayscale(200%)"></div>
 
     <div class="container-fluid py-5">
-        <div class="row pt-5">
-            <div class="col-md-4 mx-auto ml-5" style="background-color: white;">
-                <div id="texto-s" data-aos="zoom-in" data-aos-duration="2000" class="card bg-white border-0 p-5" >
-                    <h1 class="text-center" style="color: #305f59"><?php echo $titulo3;?></h1>
-                </div>
+        <div class="row pt-5 justify-content-center">
+            <div class="col-lg-2" >
+                <h1 data-aos="zoom-in" data-aos-duration="2000"  class="text-center" style="color: #305f59">
+                    <?php echo $titulo3; ?></h1>
             </div>
-            <div  id="texto-s" data-aos="fade-left" data-aos-duration="2000"  class="col-lg-8 bg-white">
-                <h5 class="font-weight-normal pb-4 pt-3 text-justify"><?php echo $texto3;?></h5>
-                <h6 class="text-center"><?php echo $descricao3;?></h6>
+
+            <div class="col-lg-9 pt-4">
+                <div class="row">
+                    <h5 data-aos="zoom-right" data-aos-duration="2500" class="font-weight-normal pb-4 pt-3 text-justify">
+                        <?php echo $texto3;?></h5>
+                    <h6>
+                        <?php echo  $descricao3?>
+                    </h6>
+                </div>
             </div>
         </div>
     </div>

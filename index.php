@@ -108,12 +108,12 @@
                  $url = $rs['url'];
 
                  echo "
-                     <div class=\"card bg-light mx-2 mb-2\" style=\"width: 18rem\">
-                    <img src=\"./libraries/img/socio_adv2.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 64px\">
+                     <div class=\"card bg-dark mx-2 mb-2\" style=\"width: 18rem\">
+                    <img src=\"./libraries/img/icons-lawyer.png\" alt=\"advogados\" class=\" mx-auto py-3\" style=\"width: 32px\">
                     <div class=\"card-heading d-flex\">
-                        <h6 class=\"my-auto mx-auto font-weight-bold\">$nomeSocia</h6>
+                        <h6 class=\"my-auto mx-auto font-weight-bold text-white\">$nomeSocia</h6>
                     </div>
-                    <div class=\"card-body\">
+                    <div class=\"card-body text-white\">
                         <p>$cargo</p>
                         <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
                         <a style=\"color: #305f59;\" class=\"font-weight-light mx-auto btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
@@ -127,7 +127,7 @@
 </section>
 
 
-<section class="container py-5">
+<section class="container py-5 my-5">
 <?php
     $sql = "select * from diferencial";
     $query = mysqli_query($conn, $sql);
@@ -142,44 +142,57 @@
         $text3 = $rs['texto_img3'];
     }
 ?>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="card border-0 text-center p-3 " style="width: 18rem">
-                    <i class="fa fa-legal fa-2x text-dark"></i>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><?php echo $title_diferencial ?></h5>
-                        <p class="card-text">
+                <div class="row">
+                    <div class="col-lg-3 text-right">
+                        <i class="fa fa-heart fa-2x text-dark"></i>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <h5 class="lead"><?php echo $title_diferencial ?></h5>
+                        <p class="">
+                            <?php echo $texto ?>
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-lg-3 text-right">
+                        <i class="fa fa-legal fa-2x text-dark"></i>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <h5 class="lead"><?php echo $title_diferencial ?></h5>
+                        <p class="">
                             <?php echo $texto ?>
                         </p>
                     </div>
                 </div>
             </div>
 
+
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="card border-0 p-3 text-center" style="width: 18rem">
-                    <i class="fa fa-thumbs-up fa-2x text-dark"></i>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><?php echo $title2 ?></h5>
-                        <p class="card-text">
-                            <?php echo $texto2 ?>
+                <div class="row">
+                    <div class="col-lg-3 text-right">
+                        <i class="fa fa-thumbs-up fa-2x text-dark"></i>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <h5 class="lead"><?php echo $title_diferencial ?></h5>
+                        <p class="">
+                            <?php echo $texto ?>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="card border-0 p-3 text-center" style="width: 18rem">
-                    <i class="fa fa-heart fa-2x text-dark"></i>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"> <?php echo $title3 ?></h5>
-                        <p class="card-text">
-                            <?php echo $text3 ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
+
+
+            </div>
 </section>
 
 <div class="container-fluid py-2 d-none d-sm-block d-none d-md-block"
@@ -204,7 +217,7 @@
                 $data = new DateTime($pubDate);
                 $nowDate = $data->format('d-m-Y H:i');
                 $html .= " <p class='text-light font-weight-bold'>$nowDate</p>
-                                    <h2 class='text-dark'>$title</h2>
+                                    <h5 class='text-dark font-weight-light'>$title</h5>
 
                                  <div class='mt-4 row justify-content-end'>
                                  <a style='border: 2px solid #1b7943' href='$link' class='text-success p-1 bg-white'> leia mais
