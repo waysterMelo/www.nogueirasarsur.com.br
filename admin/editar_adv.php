@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['email']) && (!isset($_SESSION['senha']))){
 
     echo "<script>alert('Voce precisa logar para acessar')</script>";
-    header("Location: index.php");
+    header("Location: escritorio.php");
 
 }else {
     require_once "db.php"
@@ -243,7 +243,7 @@ if (!isset($_SESSION['email']) && (!isset($_SESSION['senha']))){
                                     $rs = mysqli_query($conn,$sql);
                                     if ($rs){
                                         echo "<script>alert('Edição Concluida')</script>";
-                                        echo "<script>window.open('index.php?advogados', '_self')</script>";
+                                        echo "<script>window.open(eescritorio.php.php, '_self')</script>";
                                     }
                                 }
                                 ?>

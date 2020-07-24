@@ -76,7 +76,7 @@ while ($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item active">
-                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
                                <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
@@ -109,13 +109,12 @@ while ($rs = mysqli_fetch_array($query)){
       
         <div class="mt-5 justify-content-center">
                     <h1 id="main_txt" data-aos="fade-right" data-aos-duration="3000" 
-                    style="background: -webkit-linear-gradient(#A9BA9D, #679267;);
+                    style="background: -webkit-linear-gradient(#A9BA9D, #679267);
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: #679267;; font-size: 4rem" 
-                    class="font-weight-bold py-5 text-center display-3">
+                    -webkit-text-fill-color: #679267; font-size: 4rem;"
+                    class="font-weight-lighter py-5 text-center">
                        <?php echo $texto1; ?></h1>
                        <hr style="background-color:white; width:20%">
-                    <!-- <h2 data-aos-duration="3000" data-aos="fade-up" class="display-4 font-weight-light"><?php echo $texto2; ?></h2> -->
            </div>
         </div>
 </header>

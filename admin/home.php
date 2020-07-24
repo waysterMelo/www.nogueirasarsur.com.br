@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['email']) && (!isset($_SESSION['senha']))){
 
     echo "<script>alert('Voce precisa logar para acessar')</script>";
-   header("Location: index.php");
+   header("Location: escritorio.php");
 
 }else {
     require_once "db.php"

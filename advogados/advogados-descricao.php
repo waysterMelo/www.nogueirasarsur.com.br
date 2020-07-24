@@ -85,10 +85,10 @@ gtag('config', 'UA-145823645-1', { 'optimize_id': 'GTM-D52NT8H'});
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Escritório" href="../escritorio.php" class="nav-link">Institucional</a>
+                               <a title="Escritório" href="../institucional/escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
                                <a title="Áreas de atuação" href="../services.php" class="nav-link">Áreas de Atuação</a>
@@ -137,7 +137,7 @@ while ($rs = mysqli_fetch_array($query)){
                 <h1 style="background: -webkit-linear-gradient(#A9BA9D, #A9BA9D);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent; font-size: 4rem" class="font-weight-bold my-4 text-capitalize"><?php echo $texto; ?></h1>
-                <a href="../index.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
+                <a href="../services.php" class="text-white">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <a href="index.php" class="text-white">advogados</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
                 <span class="text-white"><?php echo $nome; ?></span>
             </div>
@@ -192,13 +192,13 @@ while ($rs = mysqli_fetch_array($query)){
                <p class="font-weight-lighter text-light">Menu</p>
                <ul class="nav flex-column">
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="../index.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
+                       <a class="nav-link text-white font-weight-bold" href="../services.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link text-white font-weight-bold" href="index.php"><i class="fa fa-chevron-right mx-2"></i>Advogados</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link text-white font-weight-bold" href="../escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Institucional</a>
+                       <a class="nav-link text-white font-weight-bold" href="../institucional/escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Institucional</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link text-white font-weight-bold" href="../works.php"><i class="fa fa-chevron-right mx-2"></i>Trabalhe conosco</a>

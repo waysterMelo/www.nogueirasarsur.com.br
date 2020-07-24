@@ -115,7 +115,7 @@
                     </div>
                     <div class=\"card-body text-white\">
                         <p>$cargo</p>
-                        <p class=\"text-capitalize font-weight-light pb-3\">$area</p>
+                        <p class=\"font-weight-light pb-3\">$area</p>
                         <a style=\"color: #305f59;\" class=\"font-weight-light mx-auto btn btn-grad text-white\" href=\"./advogados/$url\"><i class=\"fa fa-plus mx-2\"></i>mais informações</a>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
     $query = mysqli_query($conn, $sql);
     while ($rs = mysqli_fetch_array($query)){
         $title_diferencial = $rs['titulo'];
-        $texto = $rs['texto'];
+        $texto1_dif = $rs['texto'];
 
         $title2 = $rs['titulo_img2'];
         $texto2 = $rs['texto_img2'];
@@ -151,8 +151,8 @@
 
                     <div class="col-lg-9">
                         <h5 class="lead"><?php echo $title_diferencial ?></h5>
-                        <p class="">
-                            <?php echo $texto ?>
+                        <p class="text-justify" style="font-size:smaller">
+                            <?php echo $texto1_dif ?>
                         </p>
                     </div>
                 </div>
@@ -166,8 +166,8 @@
 
                     <div class="col-lg-9">
                         <h5 class="lead"><?php echo $title_diferencial ?></h5>
-                        <p class="">
-                            <?php echo $texto ?>
+                        <p class="text-justify" style="font-size:smaller">
+                            <?php echo $texto2 ?>
                         </p>
                     </div>
                 </div>
@@ -182,8 +182,8 @@
 
                     <div class="col-lg-9">
                         <h5 class="lead"><?php echo $title_diferencial ?></h5>
-                        <p class="">
-                            <?php echo $texto ?>
+                        <p class="text-justify" style="font-size:smaller">
+                            <?php echo $text3 ?>
                         </p>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                                     <h5 class='text-dark font-weight-light'>$title</h5>
 
                                  <div class='mt-4 row justify-content-end'>
-                                 <a style='border: 2px solid #1b7943' href='$link' class='text-success p-1 bg-white'> leia mais
+                                 <a  target='_blank' style='border: 2px solid #1b7943' href='$link' class='text-success p-1 bg-white'> leia mais
                                   <i class='fa fa-plus mx-2'></i></a>
                                     </div>
                              <hr style='background-color: #0c5460'>

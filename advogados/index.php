@@ -44,8 +44,10 @@ while ($rs = mysqli_fetch_array($query)){
 
 <header id="escritorio-header">
 <div class="container-fluid" id="header"
-            style="background-image: url('../libraries/img/<?php echo $img_he; ?>'); background-size: cover; height: 450px;  background-attachment: fixed;">
-           
+            style="background-image: url('../libraries/img/<?php echo $img_he; ?>');
+                    background-size: cover; height: 550px;
+                    background-attachment: fixed;">
+
             <div class="row" id="address">   
             <div class="col-lg-12 col-md-12 col-12 bg-light text-dark p-2">  
                 <div class="text-center">
@@ -69,10 +71,10 @@ while ($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Escritório" href="../escritorio.php" class="nav-link">Institucional</a>
+                               <a title="Escritório" href="../institucional/escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
                                <a title="Áreas de atuação" href="../services.php" class="nav-link">Áreas de atuação</a>
@@ -101,11 +103,11 @@ while ($rs = mysqli_fetch_array($query)){
 
         <div class="row justify-content-center">
             <div class="text-capitalize text-center pb-5">
-                <h1 style="background: -webkit-linear-gradient(#A9BA9D, #A9BA9D);
+                <h1 style="background: -webkit-linear-gradient(#A9BA9D, #679267);
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;font-size: 4rem" class="font-weight-bold mt-5 py-4 display-4 "><?php echo $texto_header;?></h1>
-                <a href="index.php" class="text-light">pagina inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
-                <span class="text-light text-capitalize"> advogados</span>
+                    -webkit-text-fill-color: #679267; font-size: 4rem;" class="font-weight-lighter mt-5 py-4 display-4 "><?php echo $texto_header;?></h1>
+                <a href="index.php" class="text-light">página inicial</a><i class="fa fa-chevron-right mx-2" style="color: white;"></i>
+                <span class="text-light"> advogados</span>
             </div>
         </div>
     </div>
@@ -143,7 +145,7 @@ while ($rs = mysqli_fetch_array($query)){
                     </div>
                     <div class="card-body">
                         <p><?php echo $cargo;?></p>
-                        <p class="text-capitalize pb-3"><?php echo $area;?></p>
+                        <p class=" pb-3"><?php echo $area;?></p>
                         <a style="color: #305f59;" class="font-weight-bold text-center btn btn-grad text-white" href=<?php echo $url1; ?>><i class="fa fa-plus mx-2"></i>mais informações</a>
                     </div>
                 </div>
@@ -216,13 +218,13 @@ while ($rs = mysqli_fetch_array($query)){
                 <p class="font-weight-light text-light">Menu</p>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold" href="../index.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
+                        <a class="nav-link text-white font-weight-bold" href="../services.php"><i class="fa fa-chevron-right mx-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white font-weight-bold" href="../advogados/"><i class="fa fa-chevron-right mx-2"></i>Advogados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bold" href="../escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Escritorio</a>
+                        <a class="nav-link text-white font-weight-bold" href="../institucional/escritorio.php"><i class="fa fa-chevron-right mx-2"></i>Escritorio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white font-weight-bold" href="../works.php"><i class="fa fa-chevron-right mx-2"></i>Trabalhe conosco</a>

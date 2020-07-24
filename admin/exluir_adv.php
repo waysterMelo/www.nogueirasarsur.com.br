@@ -7,7 +7,7 @@ if (isset($_GET['id'])){
     $query = mysqli_query($conn,$sql);
     if ($query){
         echo "<script>alert('Advogado Excluido')</script>";
-        echo "<script>window.open('index.php?advogados', '_self')</script>";
+        echo "<script>window.open(eescritorio.php.php, '_self')</script>";
     }
 }
 
