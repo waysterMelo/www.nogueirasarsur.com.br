@@ -52,7 +52,7 @@ while($rs = mysqli_fetch_array($query)){
     <div id="status"></div>
 </div>
 
-<header id="escritorio-header">
+<header id="header">
     <div class="container-fluid" id="header-escritorio"
          style="background-image: url('./libraries/img/<?php echo $img; ?>');
                  background-size: cover;
@@ -79,10 +79,10 @@ while($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="index.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Escritório" href="institucional/index.php" class="nav-link">Institucional</a>
+                               <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
                                <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de Atuação</a>

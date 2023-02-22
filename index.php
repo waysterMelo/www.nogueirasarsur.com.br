@@ -53,7 +53,7 @@
                 <p class="font-normal py-5 p_areas text-center" style="line-height: 20px"><?php echo $txt;?></p>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="card" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="800">
+                    <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         <div class="card-img-top">
                             <img style="width: 60px;" src="./libraries/img/<?php echo $img1;?>"
                                 title="reconhecimento" alt="pratice areas" class="img-fluid"/>
@@ -84,7 +84,7 @@
     </div>
 </section>
 
-<section class="pb-2 bg-white" style="zoom: 1;" id="advogados_novo" >
+<section class="pb-2 bg-white" id="advogados_novo" >
     <div class="container-fluid">
         <div class="py-5 text-center">
             <h2 class="font-weight-bold text-uppercase">Advogados</h2>

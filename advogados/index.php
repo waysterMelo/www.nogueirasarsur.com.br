@@ -60,10 +60,10 @@ while ($rs = mysqli_fetch_array($query)){
                  </p>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white" style="width: 100%">
              <a class="navbar-brand" href="index.php">
                  <img id="img_logo_menu" alt="logo" src="../libraries/img/logo.jpg" 
-                 class="img-fluid col-12">
+                 class="img-fluid col-12" style="width:40%">
              </a>
                    <button class="navbar-toggler mx-auto" id="buttonnav" type="button" data-toggle="collapse" data-target="#nav">
                        <span class="navbar-toggler-icon"></span>
@@ -71,10 +71,10 @@ while ($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="../index.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Escritório" href="../institucional/escritorio.php" class="nav-link">Institucional</a>
+                               <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item">
                                <a title="Áreas de atuação" href="../services.php" class="nav-link">Áreas de atuação</a>

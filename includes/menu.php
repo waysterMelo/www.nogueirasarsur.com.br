@@ -54,7 +54,7 @@ while ($rs = mysqli_fetch_array($query)){
        <div class="container-fluid" id="header"
             style="background-image: url('../libraries/img/<?php echo $img1; ?>'); background-size: cover; height: 600px; background-attachment: fixed;">
            
-            <div class="row" id="adress">   
+            <div class="row" id="address">   
             <div class="col-lg-12 col-md-12 col-12 bg-light p-2">  
                 <div class="text-center">
                 <p><i class="fa fa-globe mx-2"></i> <?php echo $endereco ?>
@@ -65,10 +65,12 @@ while ($rs = mysqli_fetch_array($query)){
                  </p>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            </div>
+            
+            <div class="row">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-white">
              <a class="navbar-brand" href="index.php">
-                 <img id="img_logo_menu" alt="logo" src="./libraries/img/logo.jpg" 
-                 class="img-fluid col-12">
+                 <img id="img_logo_menu" alt="logo" src="./libraries/img/logo.jpg">
              </a>
                    <button class="navbar-toggler mx-auto" id="buttonnav" type="button" data-toggle="collapse" data-target="#nav">
                        <span class="navbar-toggler-icon"></span>
@@ -76,7 +78,7 @@ while ($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item active">
-                               <a title="Página Inicial" href="../services.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="index.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
                                <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
@@ -111,7 +113,7 @@ while ($rs = mysqli_fetch_array($query)){
                     <h1 id="main_txt" data-aos="fade-right" data-aos-duration="3000" 
                     style="background: -webkit-linear-gradient(#A9BA9D, #679267);
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: #679267; font-size: 4rem;"
+                    -webkit-text-fill-color: white; font-size: 4rem;"
                     class="font-weight-lighter py-5 text-center">
                        <?php echo $texto1; ?></h1>
                        <hr style="background-color:white; width:20%">

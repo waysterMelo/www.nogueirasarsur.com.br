@@ -430,29 +430,36 @@ body,html{
       line-height: 30px;
     }
 }
-@media (min-width: 1920px) and (max-width: 2600px) {
+@media (min-width: 1920px) and (max-width: 2560px) {
     #header {
-        zoom: 1.3;
+        zoom: 1.4;
+    }
+    #address p{
+        font-size: 80%;
     }
 
     #header span{
-        font-size: 110%;
+        font-size: 80%;
         line-height: 20px;
+    }
+    #img_logo_menu{
+        width:30%;
     }
 
     nav{
         background-color: transparent;
-        height: 70px;
+        height: 130px;
+        width: 100%;
     }
 
+
     #nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        zoom:0.7;
     }
 
     #nav ul li a:hover {
         color: white;
-        font-size: 1.2rem;
-        border-bottom: 3px solid white;
     }
 
     #diferencial {
@@ -502,6 +509,9 @@ body,html{
         border: 2px solid black;
         padding: 10px;
         font-size: 2rem;
+    }
+    #areas{
+        zoom:0.8;
     }
 
     #areas .card{
@@ -588,35 +598,33 @@ body,html{
     }
 
     #advogados_novo .container{
-       min-width: 90%;
+       min-width: 100%;
     }
 
     #advogados_novo .card{
-        min-height: 700px;
-        max-height: 700px;
+        min-height: 400px;
+        max-height: 400px;
         width: 100%;
     }
 
     #advogados_novo .card-heading{
-        min-height: 150px;
-        max-height: 150px;
+        min-height: 100px;
+        max-height: 100px;
         overflow: auto;
     }
 
     #advogados_novo  .card-body{
-        min-height: 180px;
-        max-height: 180px;
-        overflow: auto;
-        zoom: 1.4;
-        line-height: 180%;
+        min-height: 150px;
+        max-height: 150px;
+        line-height: 50%;
 
     }
     #advogados_novo .card img{
-        zoom: 1.5;
+        zoom: 1;
     }
 
     #advogados_novo .card .btn{
-        zoom: 1.5;
+        zoom: 1;
     }
 
     .servicos1 img{

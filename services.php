@@ -55,7 +55,7 @@ while($rs = mysqli_fetch_array($query)){
 <div id="preloader">
     <div id="status"></div>
 </div>
-<header id="escritorio-header" style="background-image: url('./libraries/img/<?php echo $header_img; ?>'); background-size: cover;
+<header id="header" style="background-image: url('./libraries/img/<?php echo $header_img; ?>'); background-size: cover;
         height: 550px; background-repeat: no-repeat; background-attachment: fixed; filter: contrast(130%)">
     <div class="container-fluid" id="header-escritorio">
     <div class="row" id="adress">   
@@ -80,10 +80,10 @@ while($rs = mysqli_fetch_array($query)){
                    <div class="collapse navbar-collapse" id="nav">
                        <ul class="navbar-nav mx-auto text-center">
                            <li class="nav-item">
-                               <a title="Página Inicial" href="services.php" class="nav-link">Home</a>
+                               <a title="Página Inicial" href="index.php" class="nav-link">Home</a>
                            </li>
                            <li class="nav-item">
-                               <a title="Escritório" href="institucional/escritorio.php" class="nav-link">Institucional</a>
+                               <a title="Escritório" href="escritorio.php" class="nav-link">Institucional</a>
                            </li>
                            <li class="nav-item active">
                                <a title="Áreas de atuação" href="services.php" class="nav-link">Áreas de Atuação</a>
